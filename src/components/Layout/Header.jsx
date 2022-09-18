@@ -2,23 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useRouteMatch } from "react-router-dom";
 import {
-  FaFacebookF,
   FaTwitter,
-  FaInstagram,
-  FaYoutube,
-  FaDribbble,
+  FaLinkedinIn,
+  FaGithub,
 } from "react-icons/fa";
 
 const headerData = {
-  name: "Bako Doe",
-  designation: "Web Developer",
+  name: "Nakul Gupta",
+  designation: "Sr. Product Developer",
   imageThumb: "/images/logo.png",
   social: {
-    facebook: "https://facebook.com",
-    twitter: "https://twitter.com",
-    instagram: "https://www.instagram.com/",
-    youtue: "https://www.youtube.com/",
-    dribbble: "https://dribbble.com/",
+    linkedin: "https://www.linkedin.com/in/thenakulgupta/",
+    twitter: "https://twitter.com/the_nakulgupta",
+    github: "https://github.com/gnakul2001",
   },
 };
 
@@ -45,7 +41,7 @@ function Header({ toggleHeader, toggleHandler }) {
           <span></span>
         </button>
         <Link to="/" className="logo">
-          <img src={headerData.imageThumb} alt={headerData.name} />
+          <img style={{ "width": "100px", borderRadius: "50%" }} src={headerData.imageThumb} alt={headerData.name} />
         </Link>
         <Link to="/" className="site-title dot ml-2">
           {headerData.name}
@@ -67,9 +63,9 @@ function Header({ toggleHeader, toggleHandler }) {
         >
           <span aria-hidden="true">&times;</span>
         </button>
-        <div className="header-inner d-flex align-items-start flex-column">
-          <Link to="/">
-            <img src={headerData.imageThumb} alt={headerData.name} />
+        <div className="header-inner d-flex align-items-start flex-column" style={{ overflowX: "auto" }}>
+          <Link to="/" style={{ "width": "100%", "display": "grid", }}>
+            <img style={{ "width": "100px", borderRadius: "50%", margin: "auto" }} src={headerData.imageThumb} alt={headerData.name} />
           </Link>
           <Link to="/" className="site-title dot mt-3">
             {headerData.name}
@@ -115,7 +111,7 @@ function Header({ toggleHeader, toggleHandler }) {
                   </Link>
                 )}
               </li>
-              <li>
+              {/* <li>
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
@@ -132,7 +128,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-bulb"></i>Services
                   </Link>
                 )}
-              </li>
+              </li> */}
               <li>
                 {currentPath === "/" ? (
                   <ScrollLink
@@ -143,11 +139,11 @@ function Header({ toggleHeader, toggleHandler }) {
                     offset={-50}
                     duration={500}
                   >
-                    <i className="icon-graduation"></i>Resume
+                    <i className="icon-graduation"></i>Experience
                   </ScrollLink>
                 ) : (
                   <Link to="/">
-                    <i className="icon-graduation"></i>Resume
+                    <i className="icon-graduation"></i>Experience
                   </Link>
                 )}
               </li>
@@ -210,46 +206,28 @@ function Header({ toggleHeader, toggleHandler }) {
 
           <div className="footer mt-auto">
             <ul className="social-icons list-inline">
-              {!headerData.social.facebook ? null : (
+              {!headerData.social.linkedin ? null : (
                 <li className="list-inline-item">
-                  <a href={headerData.social.facebook}>
-                    <FaFacebookF />
+                  <a href={headerData.social.linkedin} target="_blank" rel="noreferrer">
+                    <FaLinkedinIn />
                   </a>
                 </li>
               )}
               {!headerData.social.twitter ? null : (
                 <li className="list-inline-item">
-                  <a href={headerData.social.twitter}>
+                  <a href={headerData.social.twitter} target="_blank" rel="noreferrer">
                     <FaTwitter />
                   </a>
                 </li>
               )}
-              {!headerData.social.instagram ? null : (
+              {!headerData.social.github ? null : (
                 <li className="list-inline-item">
-                  <a href={headerData.social.instagram}>
-                    <FaInstagram />
-                  </a>
-                </li>
-              )}
-              {!headerData.social.youtue ? null : (
-                <li className="list-inline-item">
-                  <a href={headerData.social.youtue}>
-                    <FaYoutube />
-                  </a>
-                </li>
-              )}
-              {!headerData.social.dribbble ? null : (
-                <li className="list-inline-item">
-                  <a href={headerData.social.dribbble}>
-                    <FaDribbble />
+                  <a href={headerData.social.github} target="_blank" rel="noreferrer">
+                    <FaGithub />
                   </a>
                 </li>
               )}
             </ul>
-
-            <span className="copyright">
-              &copy; {new Date().getFullYear()} Bako Template
-            </span>
           </div>
         </div>
       </header>

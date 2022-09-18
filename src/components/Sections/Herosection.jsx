@@ -1,24 +1,35 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
+const calculate_years = (date1) => {
+  var today = new Date();
+  var birthDate = new Date(date1);
+  var years_now = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    years_now--;
+  }
+  return years_now;
+};
+
 const herosectionData = {
-  name: "Bako Doe",
-  aboutMe:
-    "He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+  name: "Nakul Gupta",
+  aboutMe: `I started my journey when I was 14 years old in year 2015. I am a dedicated and efficient Flutter, Full Stack, Android (Java/Kotlin) developer with ${calculate_years("01 Jan 2015")}+ years experience.`,
 };
 
 function Herosection() {
   return (
     <section
       className="hero background parallax shadow-dark d-flex align-items-center"
-      style={{ backgroundImage: "url(/images/hero.jpg)" }}
+      style={{ backgroundImage: "url(/images/about.png)", backgroundSize: "contain" }}
     >
       <div className="cta mx-auto mt-2">
         <h1 className="mt-0 mb-4">
           I’m {herosectionData.name}
           <span className="dot"></span>
         </h1>
-        <p className="mb-4">{herosectionData.aboutMe}</p>
+        <p style={{ whiteSpace: 'pre-line' }} className="mb-4">{herosectionData.aboutMe}</p>
+        <p style={{ whiteSpace: 'pre-line', fontWeight: 'bold' }} className="mb-4">{herosectionData.languageKnown}</p>
         <ScrollLink
           activeClass="active"
           to="section-portfolios"

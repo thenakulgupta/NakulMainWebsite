@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const contactData = {
-  phone: ["+44 1632 960428"],
-  email: ["hello@bako.com"],
-  location: "West Palm Beach, 4669 Travis Street",
+  phone: ["+918802631740"],
+  email: ["nakulgupta1042@gmail.com"],
+  location: "Narela, Delhi",
 };
 
 function Contact() {
@@ -62,7 +62,7 @@ function Contact() {
           <div className="details">
             <h5>Phone</h5>
             {contactData.phone.map((singlePhone, index) => (
-              <span key={index}>{singlePhone}</span>
+              <span key={index}><a href={"tel:" + singlePhone}>{singlePhone}</a></span>
             ))}
           </div>
         </div>
@@ -71,7 +71,7 @@ function Contact() {
           <div className="details">
             <h5>Email address</h5>
             {contactData.email.map((singleEmail, index) => (
-              <span key={index}>{singleEmail}</span>
+              <span key={index}><a href={"mailto:" + singleEmail}>{singleEmail}</a></span>
             ))}
           </div>
         </div>

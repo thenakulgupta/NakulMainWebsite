@@ -4,26 +4,66 @@ import Skill from "../Items/Skill";
 
 const skillData = {
   skillContent:
-    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks grove right at the coast of the Semantics",
+    "Certified in both Frontend and Backend technologies. I started my journey from Android Java, PHP and MySQL for backend then moved to Laravel, Flutter, NodeJS, Python and Kotlin. Now I am comfortable on all these languages.",
   progressData: [
     {
       id: 1,
-      name: "Wordpress",
-      percentage: 85,
+      name: "C++",
+      percentage: 80,
     },
     {
       id: 2,
-      name: "HTML & CSS",
-      percentage: 90,
+      name: "PHP",
+      percentage: 95,
     },
     {
       id: 3,
-      name: "jQuery",
-      percentage: 60,
+      name: "HTML & CSS & JS",
+      percentage: 95,
     },
     {
       id: 4,
-      name: "Sketch",
+      name: "Java",
+      percentage: 60,
+    },
+    {
+      id: 5,
+      name: "Android Java",
+      percentage: 80,
+    },
+    {
+      id: 6,
+      name: "Android Kotlin",
+      percentage: 60,
+    },
+    {
+      id: 7,
+      name: "Flutter",
+      percentage: 90,
+    },
+    {
+      id: 8,
+      name: "Laravel",
+      percentage: 95,
+    },
+    {
+      id: 9,
+      name: "MySQL",
+      percentage: 95,
+    },
+    {
+      id: 10,
+      name: "NodeJS",
+      percentage: 90,
+    },
+    {
+      id: 11,
+      name: "Python",
+      percentage: 60,
+    },
+    {
+      id: 12,
+      name: "ElectonJS",
       percentage: 70,
     },
   ],
