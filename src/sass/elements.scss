@@ -51,6 +51,7 @@
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes sk-rotate {
   100% {
     transform: rotate(360deg);
@@ -59,21 +60,25 @@
 }
 
 @-webkit-keyframes sk-bounce {
+
   0%,
   100% {
     -webkit-transform: scale(0);
   }
+
   50% {
     -webkit-transform: scale(1);
   }
 }
 
 @keyframes sk-bounce {
+
   0%,
   100% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
+
   50% {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -92,7 +97,7 @@
   border-radius: 0;
 }
 
-.breadcrumb > .active {
+.breadcrumb>.active {
   color: #9c9c9c;
 }
 
@@ -239,6 +244,7 @@
     &:not(:last-child) {
       margin-right: 0.3rem;
     }
+
     a {
       color: #fff;
       background: $colororange;
@@ -248,6 +254,7 @@
       line-height: 28px;
       text-align: center;
       width: 30px;
+
       &:hover {
         color: $colororange;
         background: #fff;
@@ -255,6 +262,7 @@
     }
   }
 }
+
 /* === Go to Top === */
 #return-to-top {
   position: fixed;
@@ -294,10 +302,12 @@
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   padding-top: 0;
   height: 0;
 }
+
 .videoWrapper iframe {
   position: absolute;
   top: 0;

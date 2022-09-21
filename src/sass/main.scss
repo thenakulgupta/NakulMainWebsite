@@ -710,3 +710,10 @@ a {
 .btn-border-light:hover:not([href]):not([tabindex]) {
   color: #fff !important;
 }
+
+@media only screen and (max-width: 991px) {
+
+  header.left button.close {
+    float: right !important;
+  }
+}
