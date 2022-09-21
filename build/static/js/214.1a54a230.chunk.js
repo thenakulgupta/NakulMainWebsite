@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[214],{7214:function(e,s,a){e.exports=a.p+"static/media/work-space.7348c19231bcb48e0837.md"}}]);

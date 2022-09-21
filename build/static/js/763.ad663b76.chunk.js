@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[763],{9763:function(e,a,t){e.exports=t.p+"static/media/creative-art.2eb87d90ab3d567e2d54.md"}}]);

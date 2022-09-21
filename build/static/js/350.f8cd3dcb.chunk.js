@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[350],{8350:function(e,a,i){e.exports=i.p+"static/media/creative-bulb.aaa1dcb4178d95736d30.md"}}]);
