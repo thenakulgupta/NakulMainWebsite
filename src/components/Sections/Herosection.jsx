@@ -37,7 +37,7 @@ function Herosection() {
           smooth={true}
           duration={500}
           offset={50}
-          className="btn btn-default btn-lg mr-3"
+          className="btn btn-default btn-lg me-3"
         >
           <i className="icon-grid"></i>View Portfolio
         </ScrollLink>

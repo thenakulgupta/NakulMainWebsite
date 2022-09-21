@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3124798e.css",
-    "main.js": "/static/js/main.6ad40312.js",
+    "main.css": "/static/css/main.429b3a47.css",
+    "main.js": "/static/js/main.a9d48c6c.js",
     "static/js/260.c77e2749.chunk.js": "/static/js/260.c77e2749.chunk.js",
     "static/js/310.dbc3bf75.chunk.js": "/static/js/310.dbc3bf75.chunk.js",
     "static/js/321.39fb2c74.chunk.js": "/static/js/321.39fb2c74.chunk.js",
@@ -26,12 +26,12 @@
     "static/media/apple-usb.md": "/static/media/apple-usb.488abf75e06a1fe60250.md",
     "static/media/iphone-8.md": "/static/media/iphone-8.ed29cc1cc0f098f253ac.md",
     "index.html": "/index.html",
-    "main.3124798e.css.map": "/static/css/main.3124798e.css.map",
-    "main.6ad40312.js.map": "/static/js/main.6ad40312.js.map",
+    "main.429b3a47.css.map": "/static/css/main.429b3a47.css.map",
+    "main.a9d48c6c.js.map": "/static/js/main.a9d48c6c.js.map",
     "496.5e5a4ec4.chunk.js.map": "/static/js/496.5e5a4ec4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3124798e.css",
-    "static/js/main.6ad40312.js"
+    "static/css/main.429b3a47.css",
+    "static/js/main.a9d48c6c.js"
   ]
 }

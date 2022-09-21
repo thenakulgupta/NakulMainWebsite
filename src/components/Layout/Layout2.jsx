@@ -11,7 +11,7 @@ function Layout2({ children }) {
       <Header2 toggleHeader={toggleHeader} toggleHandler={handleToggle} />
       <main
         className={
-          toggleHeader ? "content float-right push" : "content float-right"
+          toggleHeader ? "content float-end push" : "content float-end"
         }
       >
         {children}

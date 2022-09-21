@@ -52,7 +52,7 @@ function About() {
             </p>
           </div>
         </div>
-        <a href={aboutData.cvpath} target="_blank" rel="noreferrer" className="btn btn-default mr-3">
+        <a href={aboutData.cvpath} target="_blank" rel="noreferrer" className="btn btn-default me-3">
           <i className="icon-cloud-download"></i>Download CV
         </a>
         <ScrollLink

@@ -31,7 +31,7 @@ function Header({ toggleHeader, toggleHandler }) {
             : "mobile-header py-2 px-3 mt-4"
         }
       >
-        <button className="menu-icon mr-2" onClick={toggleHandler}>
+        <button className="menu-icon me-2" onClick={toggleHandler}>
           <span></span>
           <span></span>
           <span></span>
@@ -39,7 +39,7 @@ function Header({ toggleHeader, toggleHandler }) {
         <Link to="/multipage" className="logo">
           <img src={headerData.imageThumb} alt={headerData.name} />
         </Link>
-        <Link to="/" className="site-title dot ml-2">
+        <Link to="/" className="site-title dot ms-2">
           {headerData.name}
         </Link>
       </div>
@@ -47,8 +47,8 @@ function Header({ toggleHeader, toggleHandler }) {
       <header
         className={
           toggleHeader
-            ? "left float-left shadow-dark open"
-            : "left float-left shadow-dark"
+            ? "left float-start shadow-dark open"
+            : "left float-start shadow-dark"
         }
       >
         <button

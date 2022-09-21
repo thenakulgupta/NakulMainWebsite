@@ -15,8 +15,8 @@ function Skill({ progress: { name, percentage }, isVisible }) {
           style={
             isVisible
               ? {
-                  width: `${percentage}%`,
-                }
+                width: `${percentage}%`,
+              }
               : { width: 0 }
           }
         ></div>
@@ -39,8 +39,8 @@ function Skill({ progress: { name, percentage }, isVisible }) {
   return (
     <div className="skill-item">
       <div className="skill-info clearfix">
-        <h4 className="float-left mb-3 mt-0">{name}</h4>
-        <span className="float-right">{percentage}%</span>
+        <h4 className="float-start mb-3 mt-0">{name}</h4>
+        <span className="float-end">{percentage}%</span>
       </div>
       <div className="progress">{progressQuery()}</div>
     </div>
