@@ -10,87 +10,87 @@ import Portfolios from "../components/Sections/Portfolios";
 import Contact from "../components/Sections/Contact";
 
 function Homepage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return (
-    <Layout>
-      <Element name="section-home">
-        <Herosection />
-      </Element>
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+	return (
+		<Layout>
+			<Element name="section-home">
+				<Herosection />
+			</Element>
 
-      <Element name="section-about">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="About Me" />
-          <About />
-        </section>
-      </Element>
+			<Element name="section-about">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="About Me" />
+					<About />
+				</section>
+			</Element>
 
-      <Element name="section-skills">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="My skills" />
-          <Skills />
-        </section>
-      </Element>
+			<Element name="section-skills">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="My skills" />
+					<Skills />
+				</section>
+			</Element>
 
-      {/* <Element name="section-funfacts">
+			{/* <Element name="section-funfacts">
         <Funfacts />
       </Element> */}
 
-      {/* <Element name="section-services">
+			{/* <Element name="section-services">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Services" />
           <Services />
         </section>
       </Element> */}
 
-      <Element name="section-experiences">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Experience" />
-          <Experiences />
-        </section>
-      </Element>
+			<Element name="section-experiences">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Experience" />
+					<Experiences />
+				</section>
+			</Element>
 
-      <Element name="section-portfolios">
+			{/* <Element name="section-portfolios">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Portfolio" />
           <Portfolios />
         </section>
-      </Element>
+      </Element> */}
 
-      {/* <Element name="section-pricing">
+			{/* <Element name="section-pricing">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Pricing table" />
           <PricingTable />
         </section>
       </Element> */}
 
-      {/* <Element name="section-testimonials">
+			{/* <Element name="section-testimonials">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Testimonials" />
           <Testimonials />
         </section>
       </Element> */}
 
-      {/* <Element name="section-clients">
+			{/* <Element name="section-clients">
         <Clients />
       </Element> */}
 
-      {/* <Element name="section-blogs">
+			{/* <Element name="section-blogs">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Recent posts" />
           <Blogs />
         </section>
       </Element> */}
 
-      <Element name="section-contact">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Get in touch" />
-          <Contact />
-        </section>
-      </Element>
-    </Layout>
-  );
+			<Element name="section-contact">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Get in touch" />
+					<Contact />
+				</section>
+			</Element>
+		</Layout>
+	);
 }
 
 export default Homepage;
