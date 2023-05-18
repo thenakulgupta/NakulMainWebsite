@@ -18,7 +18,7 @@ const aboutData = {
   name: "Nakul Gupta",
   location: "Delhi, India",
   email: "nakulgupta1042@gmail.com",
-  phone: "+918802631740",
+  phone: "+917701983886",
   aboutMe:
     `I started my journey when I was 14 years old in year 2015. I am a dedicated and efficient Flutter, Full Stack, Android (Java/Kotlin) developer with ${calculate_years("01 Jan 2015")}+ years experience. Certified in both Frontend and Backend technologies. I started my journey from Android Java, PHP and MySQL for backend then moved to Laravel, Flutter, NodeJS, Python and Kotlin. Now I am comfortable on all these languages and learning new things daily.`,
   languageKnown: "Languages and Framework Known:\nPHP, HTML, CSS, JS, Java, Android Java, Android Kotlin, Flutter, Laravel, MySQL, NodeJS, Python and many more on my list to learn.",

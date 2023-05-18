@@ -30,7 +30,7 @@ function Herosection() {
         </h1>
         <p style={{ whiteSpace: 'pre-line' }} className="mb-4">{herosectionData.aboutMe}</p>
         <p style={{ whiteSpace: 'pre-line', fontWeight: 'bold' }} className="mb-4">{herosectionData.languageKnown}</p>
-        <ScrollLink
+        {/* <ScrollLink
           activeClass="active"
           to="section-portfolios"
           spy={true}
@@ -40,7 +40,7 @@ function Herosection() {
           className="btn btn-default btn-lg me-3"
         >
           <i className="icon-grid"></i>View Portfolio
-        </ScrollLink>
+        </ScrollLink> */}
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
           data-height="10"

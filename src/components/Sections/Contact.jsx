@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const contactData = {
-  phone: ["+918802631740"],
+  phone: ["+917701983886"],
   email: ["nakulgupta1042@gmail.com"],
   location: "Narela, Delhi",
 };
@@ -56,7 +56,8 @@ function Contact() {
 
   return (
     <div className="row">
-      <div className="col-md-4 mb-4 mb-md-0">
+      {/* <div className="col-md-4 mb-4 mb-md-0"> */}
+      <div className="mb-4 mb-md-0" style={{display: "flex",justifyContent: "space-between"}}>
         <div className="contact-info mb-5">
           <i className="icon-phone"></i>
           <div className="details">
@@ -84,7 +85,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="col-md-8">
+      {/* <div className="col-md-8">
         <form className="contact-form" onSubmit={submitHandler}>
           <div className="row">
             <div className="column col-md-6">
@@ -150,7 +151,7 @@ function Contact() {
           </button>
         </form>
         {handleAlerts()}
-      </div>
+      </div> */}
     </div>
   );
 }
