@@ -57,7 +57,7 @@ function Contact() {
   return (
     <div className="row">
       {/* <div className="col-md-4 mb-4 mb-md-0"> */}
-      <div className="mb-4 mb-md-0" style={{display: "flex",justifyContent: "space-between"}}>
+      <div className="col-md-12 mb-4 mb-md-0">
         <div className="contact-info mb-5">
           <i className="icon-phone"></i>
           <div className="details">
