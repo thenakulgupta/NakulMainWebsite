@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[918],{8918:function(e,a,t){e.exports=t.p+"static/media/telepaygate.13177928fb8e93dfc7c9.md"}}]);
