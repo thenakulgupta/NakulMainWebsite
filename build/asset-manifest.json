@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.87d261c2.css",
-    "main.js": "/static/js/main.3c82a72f.js",
+    "main.js": "/static/js/main.55f3e581.js",
     "static/js/206.594ae2d2.chunk.js": "/static/js/206.594ae2d2.chunk.js",
-    "static/js/918.196a3a06.chunk.js": "/static/js/918.196a3a06.chunk.js",
+    "static/js/918.a0aa0068.chunk.js": "/static/js/918.a0aa0068.chunk.js",
     "static/media/covid-vaccine-finder.md": "/static/media/covid-vaccine-finder.4a2a2237723e497c8528.md",
-    "static/media/telepaygate.md": "/static/media/telepaygate.7beb6b435a5f46bfc9b6.md",
+    "static/media/telepaygate.md": "/static/media/telepaygate.a41c1b3e2e3293f1d923.md",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.87d261c2.css.map": "/static/css/main.87d261c2.css.map",
-    "main.3c82a72f.js.map": "/static/js/main.3c82a72f.js.map"
+    "main.55f3e581.js.map": "/static/js/main.55f3e581.js.map"
   },
   "entrypoints": [
     "static/css/main.87d261c2.css",
-    "static/js/main.3c82a72f.js"
+    "static/js/main.55f3e581.js"
   ]
 }

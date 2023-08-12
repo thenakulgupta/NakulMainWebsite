@@ -5,7 +5,7 @@ url: https://dashboard.telepaygate.guptanakul.com
 # TelePayGate: Revolutionizing Payment Processing for Businesses
 
 <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);border-radius: 5px;">
-    <img src="/images/projects/TelePayGate_merchant_dashboard.png" alt="TelePayGate: Revolutionizing Payment Processing for Businesses" style="border-radius: 5px;">
+    <img src="/images/projects/telepaygate_merchant_dashboard.png" alt="TelePayGate: Revolutionizing Payment Processing for Businesses" style="border-radius: 5px;">
 </div>
 
 &nbsp;
