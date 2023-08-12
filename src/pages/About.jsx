@@ -8,31 +8,31 @@ import Testimonials from "../components/Sections/Testimonials";
 import Clients from "../components/Sections/Clients";
 
 function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return (
-    <Layout2>
-      <section className="shadow-blue white-bg padding mt-0">
-        <SectionHeading title="About Me" />
-        <AboutSection />
-      </section>
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+	return (
+		<Layout2>
+			<section className="shadow-blue white-bg padding mt-0">
+				<SectionHeading title="About Me" />
+				<AboutSection />
+			</section>
 
-      <section className="shadow-blue white-bg padding">
-        <SectionHeading title="My skills" />
-        <Skills />
-      </section>
+			<section className="shadow-blue white-bg padding">
+				<SectionHeading title="My skills" />
+				<Skills />
+			</section>
 
-      <Funfacts />
+			<Funfacts />
 
-      <section className="shadow-blue white-bg padding">
-        <SectionHeading title="Testimonials" />
-        <Testimonials />
-      </section>
+			<section className="shadow-blue white-bg padding">
+				<SectionHeading title="Testimonials" />
+				<Testimonials />
+			</section>
 
-      <Clients />
-    </Layout2>
-  );
+			<Clients />
+		</Layout2>
+	);
 }
 
 export default About;

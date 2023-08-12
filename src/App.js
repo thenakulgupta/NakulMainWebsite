@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Multipage from "./pages/Multipage";
 import Bloglist from "./pages/Bloglist";
@@ -23,27 +23,27 @@ import WorkDetails2 from "./pages/WorkDetails2";
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Homepage} exact />
-        <Route path="/multipage" component={Multipage} exact />
-        <Route path="/blogs" component={Bloglist} exact />
-        <Route path="/bloglist" component={Bloglist2} exact />
-        <Route path="/blogs/:id/:title" component={BlogDetails} />
-        <Route path="/blog-details/:id/:title" component={BlogDetails2} />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/multipage" element={<Multipage />} exact />
+        <Route path="/blogs" element={<Bloglist />} exact />
+        <Route path="/bloglist" element={<Bloglist2 />} exact />
+        <Route path="/blogs/:id/:title" element={<BlogDetails />} />
+        <Route path="/blog-details/:id/:title" element={<BlogDetails2 />} />
 
         {/* For Multipage */}
-        <Route path="/multipage" component={Multipage} exact />
-        <Route path="/about" component={About} exact />
-        <Route path="/services" component={Services} exact />
-        <Route path="/resume" component={Resume} exact />
-        <Route path="/works" component={Works} exact />
-        <Route path="/works/:id/:title" component={WorkDetails} />
-        <Route path="/work-details/:id/:title" component={WorkDetails2} />
-        <Route path="/contact" component={Contact} exact />
+        <Route path="/multipage" element={<Multipage />} exact />
+        <Route path="/about" element={<About />} exact />
+        <Route path="/services" element={<Services />} exact />
+        <Route path="/resume" element={<Resume />} exact />
+        <Route path="/works" element={<Works />} exact />
+        <Route path="/works/:id/:title" element={<WorkDetails />} />
+        <Route path="/work-details/:id/:title" element={<WorkDetails2 />} />
+        <Route path="/contact" element={<Contact />} exact />
 
         {/* Demo Purpose Only */}
-        <Route path="/demopage" component={Demopage} exact />
-      </Switch>
+        <Route path="/demopage" element={<Demopage />} exact />
+      </Routes>
     </BrowserRouter>
   );
 }

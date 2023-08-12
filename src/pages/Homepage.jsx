@@ -8,6 +8,7 @@ import Skills from "../components/Sections/Skills";
 import Experiences from "../components/Sections/Experiences";
 import Portfolios from "../components/Sections/Portfolios";
 import Contact from "../components/Sections/Contact";
+import Educations from "../components/Sections/Education";
 
 function Homepage() {
 	useEffect(() => {
@@ -48,6 +49,13 @@ function Homepage() {
 				<section className="shadow-blue white-bg padding">
 					<SectionHeading title="Experience" />
 					<Experiences />
+				</section>
+			</Element>
+
+			<Element name="section-educations">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Education" />
+					<Educations />
 				</section>
 			</Element>
 
