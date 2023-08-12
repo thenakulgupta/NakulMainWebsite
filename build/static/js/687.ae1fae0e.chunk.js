@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[687],{687:function(e,a,s){e.exports=s.p+"static/media/apple-usb.488abf75e06a1fe60250.md"}}]);

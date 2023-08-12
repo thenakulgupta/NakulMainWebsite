@@ -1,37 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d40e110.css",
-    "main.js": "/static/js/main.a8e6d20f.js",
-    "static/js/260.c77e2749.chunk.js": "/static/js/260.c77e2749.chunk.js",
-    "static/js/310.dbc3bf75.chunk.js": "/static/js/310.dbc3bf75.chunk.js",
-    "static/js/321.39fb2c74.chunk.js": "/static/js/321.39fb2c74.chunk.js",
-    "static/js/687.ae1fae0e.chunk.js": "/static/js/687.ae1fae0e.chunk.js",
-    "static/js/763.ad663b76.chunk.js": "/static/js/763.ad663b76.chunk.js",
-    "static/js/350.f8cd3dcb.chunk.js": "/static/js/350.f8cd3dcb.chunk.js",
-    "static/js/825.acd4818b.chunk.js": "/static/js/825.acd4818b.chunk.js",
-    "static/js/529.7513c401.chunk.js": "/static/js/529.7513c401.chunk.js",
-    "static/js/214.1a54a230.chunk.js": "/static/js/214.1a54a230.chunk.js",
-    "static/js/496.87390491.chunk.js": "/static/js/496.87390491.chunk.js",
+    "main.css": "/static/css/main.87d261c2.css",
+    "main.js": "/static/js/main.3c82a72f.js",
+    "static/js/206.594ae2d2.chunk.js": "/static/js/206.594ae2d2.chunk.js",
+    "static/js/918.196a3a06.chunk.js": "/static/js/918.196a3a06.chunk.js",
+    "static/media/covid-vaccine-finder.md": "/static/media/covid-vaccine-finder.4a2a2237723e497c8528.md",
+    "static/media/telepaygate.md": "/static/media/telepaygate.7beb6b435a5f46bfc9b6.md",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/how-to-become-better-with-ui-design.md": "/static/media/how-to-become-better-with-ui-design.cb9cebf5eef6a2607c19.md",
-    "static/media/the-ugly-truth-about-design.md": "/static/media/the-ugly-truth-about-design.a6c056dee77182ce5a0b.md",
-    "static/media/the-truth-about-design.md": "/static/media/the-truth-about-design.2f0caa6bb7e2d9e7888d.md",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/creative-bulb.md": "/static/media/creative-bulb.aaa1dcb4178d95736d30.md",
-    "static/media/creative-art.md": "/static/media/creative-art.2eb87d90ab3d567e2d54.md",
-    "static/media/minimal-art.md": "/static/media/minimal-art.b31598825aefb733878a.md",
-    "static/media/work-space.md": "/static/media/work-space.7348c19231bcb48e0837.md",
-    "static/media/apple-usb.md": "/static/media/apple-usb.488abf75e06a1fe60250.md",
-    "static/media/iphone-8.md": "/static/media/iphone-8.ed29cc1cc0f098f253ac.md",
     "index.html": "/index.html",
-    "main.1d40e110.css.map": "/static/css/main.1d40e110.css.map",
-    "main.a8e6d20f.js.map": "/static/js/main.a8e6d20f.js.map",
-    "496.87390491.chunk.js.map": "/static/js/496.87390491.chunk.js.map"
+    "main.87d261c2.css.map": "/static/css/main.87d261c2.css.map",
+    "main.3c82a72f.js.map": "/static/js/main.3c82a72f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d40e110.css",
-    "static/js/main.a8e6d20f.js"
+    "static/css/main.87d261c2.css",
+    "static/js/main.3c82a72f.js"
   ]
 }

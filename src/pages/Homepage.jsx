@@ -6,7 +6,7 @@ import Herosection from "../components/Sections/Herosection";
 import SectionHeading from "../components/Items/SectionHeading";
 import Skills from "../components/Sections/Skills";
 import Experiences from "../components/Sections/Experiences";
-import Portfolios from "../components/Sections/Portfolios";
+import Projects from "../components/Sections/Projects";
 import Contact from "../components/Sections/Contact";
 import Educations from "../components/Sections/Education";
 
@@ -34,17 +34,6 @@ function Homepage() {
 				</section>
 			</Element>
 
-			{/* <Element name="section-funfacts">
-        <Funfacts />
-      </Element> */}
-
-			{/* <Element name="section-services">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Services" />
-          <Services />
-        </section>
-      </Element> */}
-
 			<Element name="section-experiences">
 				<section className="shadow-blue white-bg padding">
 					<SectionHeading title="Experience" />
@@ -59,37 +48,19 @@ function Homepage() {
 				</section>
 			</Element>
 
-			{/* <Element name="section-portfolios">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Portfolio" />
-          <Portfolios />
-        </section>
-      </Element> */}
-
-			{/* <Element name="section-pricing">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Pricing table" />
-          <PricingTable />
-        </section>
-      </Element> */}
-
-			{/* <Element name="section-testimonials">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Testimonials" />
-          <Testimonials />
-        </section>
-      </Element> */}
-
-			{/* <Element name="section-clients">
-        <Clients />
-      </Element> */}
+			<Element name="section-projects">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Projects" />
+					<Projects />
+				</section>
+			</Element>
 
 			{/* <Element name="section-blogs">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Recent posts" />
-          <Blogs />
-        </section>
-      </Element> */}
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Recent posts" />
+					<Blogs />
+				</section>
+			</Element> */}
 
 			<Element name="section-contact">
 				<section className="shadow-blue white-bg padding">

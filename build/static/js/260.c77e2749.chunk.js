@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknakul_main_website=self.webpackChunknakul_main_website||[]).push([[260],{7260:function(e,t,i){e.exports=i.p+"static/media/how-to-become-better-with-ui-design.cb9cebf5eef6a2607c19.md"}}]);

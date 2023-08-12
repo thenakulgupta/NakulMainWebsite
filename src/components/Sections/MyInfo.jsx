@@ -70,7 +70,7 @@ const aboutData = {
 	phone: myData.phone,
 	location: myData.address,
 	aboutMe: `I am a dedicated and efficient developer with experience in Flutter, Full Stack development, and Android Java, totaling over ${
-		tExp == 1 ? "1 year" : `${tExp} years`
+		tExp === 1 ? "1 year" : `${tExp} years`
 	}. I am certified in both Frontend and Backend technologies. My journey began with Android Java, PHP, and MySQL for the backend, after which I transitioned to working with Laravel, Flutter, NodeJS, and Python. I have now achieved comfort and proficiency in all of these languages, and I continue to expand my knowledge on a daily basis.`,
 	languageKnown:
 		"Languages and Frameworks Known:\nPHP, Android Java, Flutter, Laravel, MySQL, NodeJS, Python, and many more on my learning list.",
@@ -79,7 +79,7 @@ const aboutData = {
 const heroSectionData = {
 	name: myData.name,
 	aboutMe: `I am a committed and proficient developer with more than ${
-		tExp == 1 ? "1 year" : `${tExp} years`
+		tExp === 1 ? "1 year" : `${tExp} years`
 	} of experience in Flutter, Full Stack development, and Android Java.`,
 };
 
@@ -226,6 +226,23 @@ const educationsData = [
 	},
 ];
 
+const projects = [
+	{
+		id: 1,
+		name: "TelePayGate",
+		image: "images/projects/telepaygate_merchant_dashboard.png",
+		slug: "telepaygate",
+		url: "https://dashboard.telepaygate.guptanakul.com",
+	},
+	{
+		id: 2,
+		name: "Covid Vaccine Finder",
+		image: "images/projects/covid-vaccine-finder.png",
+		slug: "covid-vaccine-finder",
+		url: "https://covid-vaccine-finder.guptanakul.com",
+	},
+];
+
 const contactData = {
 	phone: myData.phone,
 	email: myData.email,
@@ -243,4 +260,5 @@ export {
 	educationsData,
 	contactData,
 	headerData,
+	projects,
 };

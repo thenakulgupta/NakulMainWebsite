@@ -1,5 +1,4 @@
 import React from "react";
-import { calculateDateFromTo } from "../Sections/MyInfo";
 
 function Education({
 	education: {
@@ -23,7 +22,7 @@ function Education({
 				<p>
 					{yearFrom} - {yearTo == null ? "Present" : yearTo}
 				</p>
-				{typeof grade != undefined && grade ? (
+				{grade ? (
 					<>
 						<p className="mb-1">
 							<b>Grade:</b> {grade}
@@ -44,7 +43,7 @@ function Education({
 						</ul>
 					</>
 				) : null}
-				{typeof description != undefined && description.length > 0 ? (
+				{description.length > 0 ? (
 					<>
 						{(description ?? "").split("\n").map((i) => {
 							return <p className="mb-1">{i}</p>;

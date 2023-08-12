@@ -25,17 +25,6 @@ function Herosection() {
 				>
 					{heroSectionData.languageKnown}
 				</p>
-				{/* <ScrollLink
-          activeClass="active"
-          to="section-portfolios"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={50}
-          className="btn btn-default btn-lg me-3"
-        >
-          <i className="icon-grid"></i>View Portfolio
-        </ScrollLink> */}
 				<div
 					className="spacer d-md-none d-lg-none d-sm-none"
 					data-height="10"

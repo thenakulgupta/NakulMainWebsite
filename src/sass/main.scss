@@ -234,9 +234,9 @@ section {
 }
 
 /*=================================================================*/
-/*                      PORTFOLIO                              
+/*                      PROJECTS                              
 /*=================================================================*/
-.portfolio-wrapper {
+.project-wrapper {
 	[class*="col-"] {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -247,7 +247,7 @@ section {
 	display: none;
 }
 
-.portfolio-item {
+.project-item {
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
@@ -356,22 +356,22 @@ section {
 	}
 }
 
-.portfolio-info {
+.project-info {
 	color: #888;
 	font-size: 13px;
 }
 
-.portfolio-info li:not(:last-child) {
+.project-info li:not(:last-child) {
 	margin-right: 1.5rem;
 }
 
-.portfolio-info i {
+.project-info i {
 	color: $colororange;
 	font-size: 14px;
 	margin-right: 10px;
 }
 
-.portfolio-filter {
+.project-filter {
 	margin-bottom: 25px;
 
 	li {

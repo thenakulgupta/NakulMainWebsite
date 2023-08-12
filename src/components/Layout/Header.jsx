@@ -6,8 +6,7 @@ import { headerData } from "../Sections/MyInfo";
 
 function Header({ toggleHeader, toggleHandler }) {
 	const [currentPath, setCurrentPath] = useState("");
-	const match = window.location.href;
-	console.log(match);
+	const match = "/";
 
 	useEffect(() => {
 		setCurrentPath(match ?? "");
@@ -115,24 +114,6 @@ function Header({ toggleHeader, toggleHandler }) {
 									</Link>
 								)}
 							</li>
-							{/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-services"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-bulb"></i>Services
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-bulb"></i>Services
-                  </Link>
-                )}
-              </li> */}
 							<li>
 								{currentPath === "/" ? (
 									<ScrollLink
@@ -143,52 +124,72 @@ function Header({ toggleHeader, toggleHandler }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-graduation"></i>
+										<i className="icon-organization"></i>
 										Experience
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-graduation"></i>
+										<i className="icon-organization"></i>
 										Experience
 									</Link>
 								)}
 							</li>
+							<li>
+								{currentPath === "/" ? (
+									<ScrollLink
+										activeClass="active"
+										to="section-educations"
+										spy={true}
+										smooth={true}
+										offset={-50}
+										duration={500}
+									>
+										<i className="icon-graduation"></i>
+										Education
+									</ScrollLink>
+								) : (
+									<Link to="/">
+										<i className="icon-graduation"></i>
+										Education
+									</Link>
+								)}
+							</li>
+							<li>
+								{currentPath === "/" ? (
+									<ScrollLink
+										activeClass="active"
+										to="section-projects"
+										spy={true}
+										smooth={true}
+										offset={-50}
+										duration={500}
+									>
+										<i className="icon-grid"></i>Projects
+									</ScrollLink>
+								) : (
+									<Link to="/">
+										<i className="icon-grid"></i>Projects
+									</Link>
+								)}
+							</li>
 							{/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-portfolios"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-grid"></i>Works
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-grid"></i>Works
-                  </Link>
-                )}
-              </li> */}
-							{/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-blogs"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-pencil"></i>Blog
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-pencil"></i>Blog
-                  </Link>
-                )}
-              </li> */}
+								{currentPath === "/" ? (
+									<ScrollLink
+										activeClass="active"
+										to="section-blogs"
+										spy={true}
+										smooth={true}
+										offset={-50}
+										duration={500}
+									>
+										<i className="icon-pencil"></i>Blog
+									</ScrollLink>
+								) : (
+									<Link to="/">
+										<i className="icon-pencil"></i>Blog
+									</Link>
+								)}
+							</li> */}
 							<li>
 								{currentPath === "/" ? (
 									<ScrollLink
