@@ -1,0 +1,86 @@
+<?php
+
+function fetchMultiCurlData($urls)
+{
+    $mh = curl_multi_init();
+    $curl_handles = [];
+
+    foreach ($urls as $url) {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_multi_add_handle($mh, $ch);
+        $curl_handles[] = $ch;
+    }
+
+    do {
+        curl_multi_exec($mh, $running);
+    } while ($running > 0);
+
+    $responses = [];
+    foreach ($curl_handles as $ch) {
+        $response = curl_multi_getcontent($ch);
+        $data = json_decode($response, true);
+        $responses[] = $data;
+        curl_multi_remove_handle($mh, $ch);
+        curl_close($ch);
+    }
+
+    curl_multi_close($mh);
+
+    return $responses;
+}
+
+$startPage = 1;
+$endPage = 1;
+// $endPage = 1103;
+$contestName = "weekly-contest-358";
+
+$urls = [];
+for ($page = $startPage; $page <= $endPage; $page++) {
+    $url = "https://leetcode.com/contest/api/ranking/$contestName/?pagination=$page&region=global";
+    $urls[] = $url;
+}
+
+$responses = fetchMultiCurlData($urls);
+$i = 0;
+foreach ($responses as $data) {
+
+    foreach (($data['submissions'] ?? []) as $user_submission) {
+        $user = (($data["total_rank"] ?? [])[$i] ?? []);
+        if (count($user) <= 0) {
+            continue;
+        }
+        $user_slug = $user["user_slug"] ?? "";
+        $user_region = $user["data_region"] ?? "US";
+        $domain  = "https://leetcode." . (strtoupper($user_region) == "CN" ? "cn" : "com");
+
+        $submissionUrls = [];
+        $submissionData = [];
+        foreach ($user_submission as $sub) {
+            $question_id = $sub["question_id"] ?? "";
+            $submission_id = $sub["submission_id"] ?? "";
+            $submissionData[$submission_id] = $question_id;
+
+            $submissionUrls[] = "$domain/api/submissions/$submission_id/";
+        }
+
+        $responses1 = fetchMultiCurlData($submissionUrls);
+
+        foreach ($responses1 as $data1) {
+            $submission_id = $data1["id"] ?? "";
+            $code = $data1["code"] ?? "";
+            $question_id = $submissionData[$submission_id] ?? "";
+            $hashedCode = md5(preg_replace('/\t/', '', preg_replace('/\s{2,}/', ' ', $code)));
+            $groupedData[$question_id] = $groupedData[$question_id] ?? [];
+            $groupedData[$question_id][$hashedCode] = $groupedData[$question_id][$hashedCode] ?? [];
+            $groupedData[$question_id][$hashedCode][] = [
+                'submission_id' => $submission_id,
+                'username' => $user_slug,
+                'user_url' => "$domain/$user_slug",
+            ];
+        }
+        $i++;
+    }
+}
+
+print_r($groupedData);
